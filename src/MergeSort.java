@@ -8,8 +8,10 @@ public class MergeSort {
         int[] leftSequence=new int[leftArraySize];
         int[] rightSequence=new int[rightArraySize];
         int[] outputSequence=new int[a.length];
-        System.arraycopy(a, 0, leftSequence, 0, leftArraySize);
-        System.arraycopy(a, leftArraySize, rightSequence, 0, rightArraySize);
+        System.arraycopy(a, 0, leftSequence, 0, leftArraySize); //copy first half items from unsorted to left array
+        System.arraycopy(a, leftArraySize, rightSequence, 0, rightArraySize); //copy second half items from unsorted to right array
+        Arrays.sort(leftSequence); //Sort left array
+        Arrays.sort(rightSequence); //Sort right array
         System.out.println("Left Array: " + Arrays.toString(leftSequence));
         System.out.println("Right Array: " + Arrays.toString(rightSequence));
 //merge sort starts here------->
