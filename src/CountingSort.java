@@ -1,8 +1,5 @@
 import java.util.Arrays;
-
 public class CountingSort {
-
-    //Counting Sort functionality
     public static void sort(int[] arr) {
         int arrayLength = arr.length;
         if (arrayLength == 0)
@@ -40,6 +37,8 @@ public class CountingSort {
         sort(testArray);
 
         System.out.println("Elements after applying counting sort:  " + Arrays.toString(testArray));
+        System.out.println("Submitted By:\n  Yash Jain\n  Section-D\n  181500823");
+
 
     }
 
